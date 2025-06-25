@@ -1,0 +1,21 @@
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+/* Root Varribles */
+:root {
+  --text-color: #1e1b4b;
+  --accent-text-color: #8b5cf6;
+  --hover: #7c3aed;
+  --pure-white: #ffffff;
+  --border: #e4e4f0;
+  --dark-mode-text: #f3e8ff;
+  --dark-mode-accent: #c084fc;
+  --dark-mode-hover: #a855f7;
+  --card-dm: #2e1065;
+}
+
+body {
+  background-color: #fdfcff;
+}
+h1 {
+  color: var(--accent-text-colortext-color);
+}
