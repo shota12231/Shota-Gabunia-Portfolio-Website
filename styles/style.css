@@ -17,5 +17,5 @@ body {
   background-color: #fdfcff;
 }
 h1 {
-  color: var(--accent-text-colortext-color);
+  background-color: red;
 }
