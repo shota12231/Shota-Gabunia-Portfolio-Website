@@ -2,20 +2,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 /* Root Varribles */
 :root {
-  --text-color: #1e1b4b;
-  --accent-text-color: #8b5cf6;
-  --hover: #7c3aed;
+  --background: #282c33;
+  --gray-text: #abb2bf;
+  --primary: #c778dd;
   --pure-white: #ffffff;
-  --border: #e4e4f0;
-  --dark-mode-text: #f3e8ff;
-  --dark-mode-accent: #c084fc;
-  --dark-mode-hover: #a855f7;
-  --card-dm: #2e1065;
 }
 
 body {
-  background-color: #fdfcff;
+  background-color: var(--background);
 }
-h1 {
-  background-color: red;
+a {
+  text-decoration: none;
+}
+nav {
+  max-width: 90%;
+  height: 62px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid white;
+  align-items: center;
+}
+.logo-div {
+  border: 2px solid white;
+  width: 140px;
+  height: 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logoP {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--pure-white);
+}
+.nav-items {
+  max-width: 430px;
+  height: 30px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+li {
+  list-style-type: none;
+}
+li a {
+  color: var(--gray-text);
+  transition: 0.2s all ease;
+}
+li a:hover {
+  color: var(--pure-white);
+  transition: 0.2s all ease;
+  #diezi {
+    color: #ce90df;
+  }
+}
+#diezi {
+  color: var(--primary);
+  margin-right: 3px;
+}
+#burger-menu {
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 680px) {
+  .nav-items ul{
+    display: none;
+  }
+  #burger-menu {
+    display: block;
+  }
 }
