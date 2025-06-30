@@ -9,35 +9,234 @@
     <title>Shota Gabunia | Portfolio</title>
   </head>
   <body>
+    <!-- navigation -->
     <nav>
       <div class="logo-div">
-        <img id="logo" src="./assets/Union.svg" alt="logo">
+        <img id="logo" src="./assets/Union.svg" alt="logo" />
         <p id="logoP">Shota Gabunia</p>
       </div>
       <div class="nav-items">
         <ul>
-          <li><a href="#"><span id="diezi">#</span>home</a></li>
-          <li><a href="#"><span id="diezi">#</span>projects</a></li>
-          <li><a href="#"><span id="diezi">#</span>skills</a></li>
-          <li><a href="#"><span id="diezi">#</span>about-me</a></li>
-          <li><a href="#"><span id="diezi">#</span>contacts</a></li>
+          <li>
+            <a href="#"><span id="diezi">#</span>home</a>
+          </li>
+          <li>
+            <a href="#"><span id="diezi">#</span>projects</a>
+          </li>
+          <li>
+            <a href="#"><span id="diezi">#</span>skills</a>
+          </li>
+          <li>
+            <a href="#"><span id="diezi">#</span>about-me</a>
+          </li>
+          <li>
+            <a href="#"><span id="diezi">#</span>contacts</a>
+          </li>
         </ul>
-        <img id="burger-menu" src="./assets/Frame 60.svg" alt="burger-menu">
+        <img id="burger-menu" src="./assets/Frame 60.svg" alt="burger-menu" />
       </div>
     </nav>
+    <!-- header, hero section -->
     <section id="hero-section">
       <div class="hero-info-div">
-        <h3 class="hero-info">Hi I'm Shota,<span class="hero-info-span"> Junior Front-end Developer.</span> let's make Websites!</h3>
-        <p class="hero-info-p">I craft responsive websites where technologies meet creativity.</p>
+        <h3 class="hero-info">
+          Hi I'm Shota,<span class="hero-info-span">
+            Junior Front-end Developer.</span
+          >
+          let's make Websites!
+        </h3>
+        <p class="hero-info-p">
+          I craft responsive websites where technologies meet creativity.
+        </p>
         <button id="contactBtn" type="button">Contact Me !!</button>
       </div>
       <div class="hero-photo">
-        <img id="img1" src="./assets/Group 46.svg" alt="image">
+        <img id="img1" src="./assets/Group 46.svg" alt="image" />
         <div class="current-project">
-          <p class="current-text">Currently working on <span class="current-text-span">Portfolio</span></p>
+          <p class="current-text">
+            Currently working on
+            <span class="current-text-span">Portfolio</span>
+          </p>
         </div>
       </div>
     </section>
+    <!-- random quote generator component -->
+    <div class="randomQuotes">
+      <img id="upperQuote" src="./assets/quote.svg" alt="quote-sign" />
+      <p id="demoP"></p>
+      <img id="bottomQuote" src="./assets/quote.svg" alt="quote-sign" />
+    </div>
+    <!-- projects section -->
+    <section id="projectsSection">
+      <div class="starter-projects">
+        <h3 class="projects-starter-h3">
+          <span class="projects-starter-span">#</span>projects
+        </h3>
+        <p id="line"></p>
+        <a id="viewAll" href="#">View all →</a>
+      </div>
+      <div class="projects-cards-div">
+        <div class="project-card">
+          <div id="advc-gen" class="project-card-img"></div>
+          <p class="project-card-languages">HTML CSS Javascript</p>
+          <div class="project-card-info">
+            <h3>Rating Component</h3>
+            <p>Interactive Rating Component of Website</p>
+            <button id="liveWebBtn" type="button">
+              <a
+                target="_blank"
+                href="https://shota12231.github.io/Interactive-Rating-Component-Web/"
+                >Live →</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="project-card">
+          <div id="rtng-thum" class="project-card-img">></div>
+          <p class="project-card-languages">HTML CSS Javascript</p>
+          <div class="project-card-info">
+            <h3>Advice Generator</h3>
+            <p>Generates Random Quotes And Advices Using API</p>
+            <button id="liveWebBtn" type="button">
+              <a
+                target="_blank"
+                href="https://shota12231.github.io/Advice-Generator/"
+                >Live →</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="project-card">
+          <div id="gt-shop" class="project-card-img"></div>
+          <p class="project-card-languages">HTML CSS Bootstrap</p>
+          <div class="project-card-info">
+            <h3>Guitar Community</h3>
+            <p>Website For Guitar Community, Online Guitar Shop</p>
+            <button id="liveWebBtn" type="button">
+              <a
+                target="_blank"
+                href="https://shota12231.github.io/Guitar-Community-Website/"
+                >Live →</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills section -->
+    <section id="skillsSection">
+      <div class="skills-starter">
+        <h3 class="skills-text-span">
+          <span class="skills-text">#</span>skills
+        </h3>
+        <p id="line-skills"></p>
+      </div>
+      <div class="skills-main">
+        <div class="skills-image"></div>
+        <div class="skills-info-div">
+          <!-- box 1 -->
+          <div id="skills-box" class="skills-languages">
+            <p class="lngs">languages</p>
+            <hr />
+            <p class="lng-examples">Javascript</p>
+          </div>
+          <!-- box 2 -->
+          <div id="skills-box" class="skills-languages">
+            <p class="lngs">tools</p>
+            <hr />
+            <p class="lng-examples">
+              VScode <br />
+              Figma <br />
+              Github <br />Font-awesome
+            </p>
+          </div>
+          <!-- box 3 -->
+          <div id="skills-box" class="skills-languages">
+            <p class="lngs">frameworks</p>
+            <hr />
+            <p class="lng-examples">
+              Bootstrap <br />
+              TailwindCSS
+            </p>
+          </div>
+          <!-- box 4 -->
+          <div id="skills-box" class="skills-languages">
+            <p class="lngs">others</p>
+            <hr />
+            <p class="lng-examples">
+              HTML <br />
+              CSS <br />
+              SCSS
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about me section -->
+    <section id="aboutMeSection">
+      <div class="abtMe-starter">
+        <h3 class="abtme-text-span">
+          <span class="abtme-text">#</span>about-me
+        </h3>
+        <p id="line-abtme"></p>
+      </div>
+      <div class="abtMe-main">
+        <div class="abtMe-info">
+          <p class="abtme-info-text">
+            Hello, i’m Shota! <br />
+            <br />
+            I’m a front-end developer based in Tbilisi, Georgia. I can develop
+            responsive websites from scratch and raise them into modern
+            user-friendly web experiences. <br />
+            <br />
+            Transforming my creativity and knowledge into a websites has been my
+            passion for over a year. I will be helping various clients to
+            establish their presence online. I always strive to learn about the
+            newest technologies and frameworks.
+          </p>
+          <button class="contatc-btn-abtme" id="contactBtn" type="button">
+            Contact Me !!
+          </button>
+        </div>
+        <div class="abtMe-image">
+          <img id="abtme-image" src="./assets/Group 50.svg" alt="about-me" />
+        </div>
+      </div>
+    </section>
+    <!-- contatc section -->
+    <section id="contactMe">
+      <div class="contatc-starter">
+        <h3 class="contact-text-span">
+          <span class="contact-text">#</span>contact-me
+        </h3>
+        <p id="line-contact"></p>
+      </div>
+      <div class="contatc-info">
+        <div class="contact-text">
+          I’m interested in freelance opportunities. However, if you have other
+          request or question, don’t hesitate to contact me.
+        </div>
+        <div class="message">
+          <p>message me here</p>
+          <div class="cont">
+            <a target="_blank" href="https://discord.com/channels/@me">
+              <img src="./assets/Discord.svg" alt="discord-icon" />
+              <span class="discord-span">@shotagabunia1</span>
+            </a>
+          </div>
+          <div class="cont">
+            <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox">
+              <img src="./assets/Email.svg" alt="email-icon" />
+              <span id="email-span">@gabuniashota501@gmail.com</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="contact-main"></div> -->
+    </section>
+    <footer>
+      <div class="ft-div"></div>
+    </footer>
     <script src="./logic/script.js"></script>
   </body>
 </html>
