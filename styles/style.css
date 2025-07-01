@@ -85,7 +85,7 @@ li a:hover {
 #hero-section {
   border: 2px solid white;
   max-width: 70%;
-  height: 430px;
+  /* height: 430px; */
   margin: 100px auto;
   display: flex;
   justify-content: space-between;
@@ -93,7 +93,7 @@ li a:hover {
 }
 .hero-info-div {
   border: 2px solid white;
-  width: 537px;
+  max-width: 389px;
   height: 227px;
   display: flex;
   flex-direction: column;
@@ -160,7 +160,7 @@ li a:hover {
 /* random quote generator component  */
 .randomQuotes {
   border: 2px solid var(--gray-text);
-  width: 700px;
+  max-width: 700px;
   height: 110px;
   margin: 0 auto;
   display: flex;
@@ -186,7 +186,7 @@ li a:hover {
 /* projects section styles */
 #projectsSection {
   max-width: 70%;
-  height: 520px;
+  /* height: 520px; */
   border: 2px solid var(--gray-text);
   margin: 150px auto;
 }
@@ -212,6 +212,7 @@ li a:hover {
 #line {
   width: 500px;
   border: 2px solid var(--primary);
+  margin-left: 20px;
 }
 #viewAll {
   font-size: 17px;
@@ -226,9 +227,9 @@ li a:hover {
 .projects-cards-div {
   border: 2px solid var(--gray-text);
   max-width: 100%;
-  height: 430px;
-  display: flex;
-  justify-content: space-between;
+  /* height: 430px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .project-card {
   border: 2px solid var(--gray-text);
@@ -306,7 +307,7 @@ li a:hover {
 #skillsSection {
   border: 2px solid white;
   max-width: 70%;
-  height: 365px;
+  /* height: 365px; */
   margin: 100px auto;
 }
 .skills-starter {
@@ -350,10 +351,8 @@ li a:hover {
 .skills-info-div {
   border: 2px solid red;
   width: 464px;
-  height: 280px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 #skills-box {
@@ -412,6 +411,7 @@ li a:hover {
 .abtMe-info {
   border: 2px solid tomato;
   width: 450px;
+  max-width: 572px;
 }
 .abtme-info-text {
   font-size: 18px;
@@ -464,10 +464,13 @@ li a:hover {
   width: 287px;
 }
 .contatc-info {
+  justify-content: space-around;
+  display: flex;
   border: 2px solid green;
-  width: 300px;
-  margin: 70px;
+  /* width: 643px; */
+  margin: 15% auto;
 }
+
 .message {
   width: 267px;
   border: 2px solid var(--gray-text);
@@ -508,9 +511,122 @@ li a:hover {
   display: flex;
   align-items: center;
 }
-.contact-main {
+.contactMe-main {
+  border: 2px solid red;
+  width: 570px;
+  height: 342px;
+}
+/* .contact-main {
   border: 2px solid gray;
   width: 500px;
   height: 340px;
-}
+} */
 /* footer styles */
+.ft-div {
+  border-top: 2px solid var(--gray-text);
+  max-width: 100%;
+  height: 150px;
+  padding: 20px;
+}
+.ft-div-main {
+  border: 2px solid white;
+  width: 75%;
+  margin: 0 auto;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ft-div-links {
+  border: 2px solid red;
+  width: 112px;
+  height: 72px;
+}
+.ft-div-info {
+  border: 2px solid yellow;
+  width: 300px;
+  line-height: 28px;
+}
+.ft-logo {
+  color: var(--pure-white);
+  font-size: 16px;
+  font-weight: 500px;
+}
+.ft-info {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--pure-white);
+}
+.copyrights {
+  color: var(--gray-text);
+}
+.media-text {
+  color: var(--pure-white);
+  line-height: 30px;
+}
+.media-icons {
+  border: 2px solid green;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.media-icons a {
+  transition: 0.2s all ease;
+}
+.media-icons a:hover {
+  scale: 1.2;
+  transition: 0.2s all ease;
+}
+/* responsive styles */
+@media screen and (max-width: 1180px) {
+  #hero-section {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .hero-info {
+    text-align: center;
+  }
+  .hero-info-p {
+    text-align: center;
+  }
+  #contactBtn {
+    display: none;
+  }
+  #bottomQuote {
+    margin-right: 100px;
+  }
+  #upperQuote {
+    margin-left: 100px;
+  }
+  .abtMe-main {
+    flex-direction: column;
+  }
+  .abtMe-info {
+    margin: 30px auto;
+  }
+  .abtMe-image {
+    margin: 0 auto;
+  }
+  .contatc-info{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1285px) {
+  .projects-cards-div {
+    grid-template-columns: 1fr; /* aq daamate da 2 fr dauwere */
+    margin: 0 auto;
+  }
+  .project-card {
+    margin: 20px auto;
+  }
+  .skills-main {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .skills-image {
+    display: none;
+  }
+}
