@@ -196,7 +196,7 @@ li a:hover {
   height: 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 30px;
 }
 .projects-starter-span {
   font-size: 32px;
@@ -214,7 +214,7 @@ li a:hover {
   border: 2px solid var(--primary);
   margin-left: 20px;
 }
-#viewAll {
+/* #viewAll {
   font-size: 17px;
   color: var(--pure-white);
   transition: 0.2s all ease;
@@ -223,17 +223,18 @@ li a:hover {
 #viewAll:hover {
   color: var(--primary);
   transition: 0.2s all ease;
-}
+} */
 .projects-cards-div {
   border: 2px solid var(--gray-text);
   max-width: 100%;
   /* height: 430px; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 .project-card {
   border: 2px solid var(--gray-text);
-  width: 330px;
+  max-width: 330px;
   height: 428px;
   display: flex;
   flex-direction: column;
@@ -303,6 +304,25 @@ li a:hover {
   background-repeat: no-repeat;
   background-size: contain;
 }
+#book-shop {
+  background-image: url(../assets/Screenshot\ 2025-07-03\ 223108.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#runo-trav {
+  background-image: url(../assets/Screenshot\ 2025-07-03\ 223706.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#chatApp {
+  background-image: url(../assets/Screenshot\ 2025-07-03\ 224214.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 /* skill section styles */
 #skillsSection {
   border: 2px solid white;
@@ -350,10 +370,10 @@ li a:hover {
 }
 .skills-info-div {
   border: 2px solid red;
-  width: 464px;
+  max-width: 464px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 28px;
 }
 #skills-box {
   height: 123px;
@@ -410,8 +430,7 @@ li a:hover {
 }
 .abtMe-info {
   border: 2px solid tomato;
-  width: 450px;
-  max-width: 572px;
+  max-width: 450px;
 }
 .abtme-info-text {
   font-size: 18px;
@@ -441,13 +460,7 @@ li a:hover {
   font-weight: 500;
   color: var(--pure-white);
 }
-.contact-text {
-  font-size: 32px;
-  font-weight: 700;
-  color: var(--primary);
-  margin-right: 5px;
-  margin-bottom: 25px;
-}
+
 #line-contact {
   width: 200px;
   background-color: var(--primary);
@@ -456,12 +469,16 @@ li a:hover {
 .contact-text {
   line-height: 33px;
   border: 2px solid yellow;
-  height: 131px;
   font-size: 20px;
   color: var(--gray-text);
   text-align: center;
   margin-top: 40px;
-  width: 287px;
+  max-width: 287px;
+
+  font-weight: 700;
+
+  margin-right: 5px;
+  margin-bottom: 25px;
 }
 .contatc-info {
   justify-content: space-around;
@@ -472,9 +489,9 @@ li a:hover {
 }
 
 .message {
-  width: 267px;
+  max-width: 267px;
   border: 2px solid var(--gray-text);
-  padding: 10px;
+  padding: 15px;
 }
 .message p {
   font-size: 17px;
@@ -580,6 +597,40 @@ li a:hover {
   transition: 0.2s all ease;
 }
 /* responsive styles */
+@media screen and (max-width: 570px) {
+  nav {
+    background-color: red;
+  }
+  .hero-info-div {
+    max-width: 100%;
+  }
+  .hero-info-p {
+    max-width: 100%;
+  }
+  .hero-photo {
+    max-width: 100%;
+  }
+  #img1 {
+    width: 100%;
+  }
+  .current-project {
+    max-width: 270px;
+  }
+  #line {
+    display: none;
+  }
+  .skills-info-div {
+    grid-template-columns: 1fr;
+  }
+  #skills-box {
+    margin: 0 auto;
+  }
+  .ft-div-main {
+    flex-direction: column;
+    gap: 20px;
+    height: 200px;
+  }
+}
 @media screen and (max-width: 1180px) {
   #hero-section {
     flex-direction: column;
@@ -609,7 +660,7 @@ li a:hover {
   .abtMe-image {
     margin: 0 auto;
   }
-  .contatc-info{
+  .contatc-info {
     flex-direction: column;
     align-items: center;
   }
@@ -630,3 +681,4 @@ li a:hover {
     display: none;
   }
 }
+/* animations  */
