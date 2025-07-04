@@ -24,6 +24,8 @@ nav {
   justify-content: space-between;
   border: 2px solid white;
   align-items: center;
+  animation-name: slideInFromTop;
+  animation-duration: 2s;
 }
 .logo-div {
   border: 2px solid white;
@@ -86,7 +88,7 @@ li a:hover {
   border: 2px solid white;
   max-width: 70%;
   /* height: 430px; */
-  margin: 100px auto;
+  margin: 60px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,12 +108,16 @@ li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation-name: slideInFromRight;
+  animation-duration: 2s;
 }
 .hero-info {
   font-size: 32px;
   font-weight: 600;
   color: var(--pure-white);
   line-height: 43px;
+  animation-name: slideInFromLeft;
+  animation-duration: 2s;
 }
 .hero-info-span {
   color: var(--primary);
@@ -121,6 +127,9 @@ li a:hover {
   color: var(--gray-text);
   line-height: 25px;
   width: 360px;
+  animation-name: slideInFromLeft;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
 }
 #contactBtn {
   width: 140px;
@@ -130,6 +139,9 @@ li a:hover {
   color: var(--pure-white);
   font-size: 14px;
   transition: 0.3s all ease;
+  animation-name: slideInFromLeft;
+  animation-duration: 2s;
+  animation-delay: 0.3s;
 }
 #contactBtn:hover {
   background-color: #5b5c5d73;
@@ -166,6 +178,8 @@ li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+    animation-name: slideInFromBottom;  
+  animation-duration: 2s;
 }
 #demoP {
   font-size: 26px;
@@ -682,3 +696,43 @@ li a:hover {
   }
 }
 /* animations  */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-62px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(62px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
