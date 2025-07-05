@@ -48,6 +48,23 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+#darkMode {
+  border: 2px solid var(--primary);
+  padding: 5px;
+  height: 35px;
+  width: 115px;
+  color: var(--pure-white);
+  font-weight: 500;
+  font-size: 17px;
+  background-color: transparent;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+#darkMode:hover {
+  background-color: #d8b2e2;
+  border-radius: 3px;
+  transition: 0.3s all ease;
+}
 ul {
   display: flex;
   justify-content: space-between;
@@ -178,7 +195,7 @@ li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-    animation-name: slideInFromBottom;  
+  animation-name: slideInFromBottom;
   animation-duration: 2s;
 }
 #demoP {

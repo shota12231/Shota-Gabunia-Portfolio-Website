@@ -21,3 +21,19 @@ fetch("https://api.adviceslip.com/advice", {
     document.getElementById("data").textContent =
       error.message || "Server Error";
   });
+
+// dark and light mode logic
+
+const button = document.getElementById("darkMode");
+
+button.addEventListener("click", () => {
+  const isDark = document.body.style.backgroundColor === "rgb(40, 44, 51)";
+
+  if (isDark) {
+    document.body.style.backgroundColor = "#d6e4f0"; // light background
+    button.textContent = "Dark Mode";
+  } else {
+    document.body.style.backgroundColor = "#282c33"; // dark background
+    button.textContent = "Light Mode";
+  }
+});
