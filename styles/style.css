@@ -26,6 +26,9 @@ nav {
   animation-name: slideInFromTop;
   animation-duration: 2s;
 }
+/* #navUl{
+  flex-direction: column;
+} */
 .logo-div {
   width: 140px;
   height: 33px;
@@ -616,6 +619,15 @@ li a:hover {
     gap: 20px;
     height: 200px;
   }
+    #bottomQuote {
+    display: none;
+  }
+  #upperQuote {
+   display: none;
+  }
+  .projects-starter-h3 {
+    margin-bottom: 40px;
+  }
 }
 @media screen and (max-width: 1180px) {
   #hero-section {
@@ -656,9 +668,7 @@ li a:hover {
     grid-template-columns: 1fr;
     margin: 0 auto;
   }
-  .project-card {
-    margin: 20px auto;
-  }
+
   .skills-main {
     flex-direction: column;
     gap: 30px;
